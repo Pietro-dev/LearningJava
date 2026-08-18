@@ -5,7 +5,7 @@ public class Main {
 
         // Personagem 1
         Atreides PaulAtreides = new Atreides();
-        PaulAtreides.nome = "Paul Atreides";
+        PaulAtreides.nome = "Leto Atreides";
         PaulAtreides.planetaNatal = "Caladan";
         PaulAtreides.casa = "Atreides";
         PaulAtreides.idade = 18;
@@ -25,7 +25,16 @@ public class Main {
         FeydRautha.planetaNatal = "Giedi Prime";
         FeydRautha.casa = "Harkonnen";
         FeydRautha.idade = 18;
-        FeydRautha.Bordao();
+        FeydRautha.BordaoHarkonnen();
 
+        // Personagem 4
+        Paul paul = new Paul();
+        paul.nome = "Paul Atreides";
+        paul.casa = "Atreides";
+        paul.idade = 25;
+        paul.Bordao();
+        paul.EnxergarOFuturo();
+        paul.EscolherCaminhoParaOFuturo();
+        paul.planetaNatal = "Caladan";
     }
 }
