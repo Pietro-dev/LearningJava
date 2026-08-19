@@ -20,6 +20,8 @@ public class Main {
         // Personagem 4 - Objeto Paul (AtreidesHarkonnen)
         Paul paul = new Paul("Paul Atreides", "Atreides", "Caladan", 25);
         // paul.habilidadeEspecial();
+        paul.alterarFuturo(99);
+        paul.alterarFuturo();
 
         // Personagem 5 - Objeto Corrino
         Corrino princesaIrulan = new Corrino("Princesa Irulan", "Corrino", "Kaitan", 23);
@@ -28,12 +30,12 @@ public class Main {
 
         // Personagem 6 - Objeto Bene Gesserit
         BeneGesserit ladyJessica = new BeneGesserit("Lady Jessica", "Wallach IX", "Atreides", 33);
-        ladyJessica.mostrarPersonagem();
-        ladyJessica.bordao();
+//        ladyJessica.mostrarPersonagem();
+//        ladyJessica.bordao();
 
         // Personagem 7 - Objeto Atreides
         Atreides duncanIdaho = new Atreides("Duncan Idaho", "Caladan", "Atreides", 30, 10000, StatusSocial.SOLDADO);
-        duncanIdaho.mostrarPersonagem();
-        duncanIdaho.bordao();
+//        duncanIdaho.mostrarPersonagem();
+//        duncanIdaho.bordao();
     }
 }
