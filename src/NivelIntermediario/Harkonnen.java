@@ -1,7 +1,13 @@
 package NivelIntermediario;
 
-public class Harkonnen extends PersonagemDuna implements HabilidadeEspecial{
-    public Harkonnen(String nome, String casa, String planeta, int idade) {}
+public class Harkonnen extends Personagem implements HabilidadeEspecial{
+    public Harkonnen(String nome, String casa, String planeta, int idade) {
+        super(nome, casa, planeta, idade);
+    }
+
+    public Harkonnen(String nome, String planetaNatal, String casa, int idade, int numeroDeAbates, StatusSocial statusSocial) {
+        super(nome, planetaNatal, casa, idade, numeroDeAbates, statusSocial);
+    }
 
     public Harkonnen() {
     }

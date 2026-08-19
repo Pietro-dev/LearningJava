@@ -6,6 +6,10 @@ public class Paul extends Atreides implements HabilidadesBeneGesserit, Precognic
         super(nome, planetaNatal, casa, idade);
     }
 
+    public Paul(String nome, String planetaNatal, String casa, int idade, int numeroDeAbates, StatusSocial statusSocial) {
+        super(nome, planetaNatal, casa, idade, numeroDeAbates, statusSocial);
+    }
+
     public void usarAVoz() {
         System.out.println("Usando a voz...");
     }

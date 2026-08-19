@@ -1,11 +1,15 @@
 package NivelIntermediario;
 
-public class Fremen extends PersonagemDuna implements HabilidadeEspecial{
+public class Fremen extends Personagem implements HabilidadeEspecial{
     public Fremen() {
     }
 
     public Fremen(String nome, String familia, String planetaNatal, int idade) {
+        super(nome, familia, planetaNatal, idade);
+    }
 
+    public Fremen(String nome, String planetaNatal, String casa, int idade, int numeroDeAbates, StatusSocial statusSocial) {
+        super(nome, planetaNatal, casa, idade, numeroDeAbates, statusSocial);
     }
 
     public void bordao(){

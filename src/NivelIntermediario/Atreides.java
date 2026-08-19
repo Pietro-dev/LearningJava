@@ -1,8 +1,12 @@
 package NivelIntermediario;
 
-public class Atreides extends PersonagemDuna{
+public class Atreides extends Personagem {
 
     // construtores
+    public Atreides(String nome, String planetaNatal, String casa, int idade, int numeroDeAbates, StatusSocial statusSocial) {
+        super(nome, planetaNatal, casa, idade, numeroDeAbates, statusSocial);
+    }
+
     public Atreides(String nome, String planetaNatal, String casa, int idade){
         super(nome, planetaNatal, casa, idade);
     }

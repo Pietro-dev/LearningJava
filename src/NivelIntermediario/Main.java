@@ -23,12 +23,17 @@ public class Main {
 
         // Personagem 5 - Objeto Corrino
         Corrino princesaIrulan = new Corrino("Princesa Irulan", "Corrino", "Kaitan", 23);
-        princesaIrulan.mostrarPersonagem();
-        princesaIrulan.bordao();
+//        princesaIrulan.mostrarPersonagem();
+//        princesaIrulan.bordao();
 
         // Personagem 6 - Objeto Bene Gesserit
         BeneGesserit ladyJessica = new BeneGesserit("Lady Jessica", "Wallach IX", "Atreides", 33);
         ladyJessica.mostrarPersonagem();
         ladyJessica.bordao();
+
+        // Personagem 7 - Objeto Atreides
+        Atreides duncanIdaho = new Atreides("Duncan Idaho", "Caladan", "Atreides", 30, 10000, StatusSocial.SOLDADO);
+        duncanIdaho.mostrarPersonagem();
+        duncanIdaho.bordao();
     }
 }
