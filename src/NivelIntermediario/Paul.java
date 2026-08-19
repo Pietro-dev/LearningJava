@@ -1,12 +1,17 @@
 package NivelIntermediario;
 
-public class Paul extends Atreides implements AtreidesHarkonnen{
+public class Paul extends Atreides implements HabilidadesBeneGesserit, Precognicao {
 
-    public void EnxergarOFuturo() {
-        System.out.println("Enxergando caminhos do futuro!");
+    public Paul(String nome, String planetaNatal, String casa, int idade) {
+        super(nome, planetaNatal, casa, idade);
     }
 
-    public void EscolherCaminhoParaOFuturo() {
-        System.out.println("Escolhendo caminho para o futuro!");
+    public void usarAVoz() {
+        System.out.println("Usando a voz...");
+    }
+
+    @Override
+    public void preverFuturo() {
+        System.out.println("Prevendo o futuro...");
     }
 }
