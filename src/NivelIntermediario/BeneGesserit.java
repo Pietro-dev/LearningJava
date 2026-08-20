@@ -2,10 +2,10 @@ package NivelIntermediario;
 
 public class BeneGesserit extends Personagem implements HabilidadesBeneGesserit {
 
+    //Construtores
     public BeneGesserit(String nome, String planetaNatal, String casa, int idade) {
         super(nome, planetaNatal, casa, idade);
     }
-
     public BeneGesserit(String nome, String planetaNatal, String casa, int idade, int numeroDeAbates, StatusSocial statusSocial) {
         super(nome, planetaNatal, casa, idade, numeroDeAbates, statusSocial);
     }
@@ -14,7 +14,6 @@ public class BeneGesserit extends Personagem implements HabilidadesBeneGesserit 
     public void bordao() {
         System.out.println("Eu não devo temer. O medo é o assassino da mente...");
     }
-
 
     @Override
     public void usarAVoz() {

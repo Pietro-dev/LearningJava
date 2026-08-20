@@ -12,10 +12,12 @@ public class Harkonnen extends Personagem implements HabilidadeEspecial{
     public Harkonnen() {
     }
 
+    @Override
     public void bordao(){
         System.out.println("Meu deserto. Minha Arrakis. Minha duna.");
     }
 
+    @Override
     public void habilidadeEspecial(){
         System.out.println("Meu nome é " + nome + " e essa é minha habilidade Harkonnen!");
     }

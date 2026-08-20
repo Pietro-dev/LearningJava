@@ -15,11 +15,14 @@ public class Atreides extends Personagem {
         super();
     }
 
+
     // métodos
+    @Override
     public void bordao(){
         System.out.println("Aqui estou, aqui permaneço!");
     }
 
+    @Override
     public void habilidadeEspecial(){
         System.out.println("Meu nome é " + nome + " e essa é minha habilidade Atreide!");
     }
