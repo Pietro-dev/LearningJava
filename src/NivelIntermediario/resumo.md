@@ -119,5 +119,16 @@ Uma classe marcada com `final` não pode se tornar uma superclasse.
 Arquivo para armazenar valores que nunca podem mudar. Um armazenamento de constantes.
 Um enum pode ter atributos. Caso tenha atributos, ele precisa ter o construtor dentro de si e criar os enums.
 
-## Refatoração
+## Encapsulamento
+Uso da palavra reservada `private` para proteger os atribudos das classes de atribuições de valores.
+Obriga uma padronização das atribuições de valores aos atributos de classe. 
+Para inserir valores, usamos o prefixo _set_ e para buscar os valores _get_.
+### Quais problemas o encapsulamento resolve?
+- Segurança
+  - Garante que o código não tenha vazamentos nem alterações inesperadas
+- Code review
+  - Facilita a leitura e revisão do código
+  - Os _getters_ e _setters_ tornam a leitura do código mais lógica
+- Padronização
+  - Força todas as pessoas a usarem os _gets e sets_
 
