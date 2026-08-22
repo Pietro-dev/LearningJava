@@ -116,6 +116,7 @@ Uma classe marcada com `final` não pode se tornar uma superclasse.
 <hr>
 
 ## Enums
+Deve ser usado sempre que se deseja padronizar o código. **Mas** é necessário ter certeza de que os valores nunca mudarão.
 Arquivo para armazenar valores que nunca podem mudar. Um armazenamento de constantes.
 Um enum pode ter atributos. Caso tenha atributos, ele precisa ter o construtor dentro de si e criar os enums.
 
