@@ -15,16 +15,19 @@ public class BolsaGenerica<T> {
     public BolsaGenerica() {
     }
 
-    public BolsaGenerica(List<T> equipamentos) {
-        this.equipamentos = equipamentos;
-    }
-
     public List<T> getEquipamentos() {
         return equipamentos;
     }
 
     public void setEquipamentos(List<T> equipamentos) {
         this.equipamentos = equipamentos;
+    }
+
+    //mostrar equipamentos
+    public void mostrarEquipamentos(){
+        for (T equipamento : equipamentos) {
+            System.out.println(equipamento);
+        }
     }
 
     @Override
