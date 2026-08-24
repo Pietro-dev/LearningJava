@@ -133,3 +133,24 @@ Para inserir valores, usamos o prefixo _set_ e para buscar os valores _get_.
 - Padronização
   - Força todas as pessoas a usarem os _gets e sets_
 
+# Arrays e Listas
+Um array é um objeto de memória, ou seja, eu referencio espaços de memória dentro do array. 
+Além disso, os arrays são estáticos. Após se definir o tamanho dele, não é possível alterar.
+Métodos para manusear uma Lista:
+```java
+// cria a lista
+List<tipo-da-lista> nomeLista = new Lista<tipo-da-lista>();
+
+// adiciona elementos
+nomeLista.add("Nome do elemento");
+
+// remove elementos
+nomeLista.remove("nome do elemento");
+
+// altera um elemento
+// set(index elemento, conteúdo novo elemento)
+nomeLista.set(0, "novo nome elemento");
+
+// ver tamanho da lista
+nomeLista.size();
+```
