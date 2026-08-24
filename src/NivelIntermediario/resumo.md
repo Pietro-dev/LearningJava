@@ -154,3 +154,14 @@ nomeLista.set(0, "novo nome elemento");
 // ver tamanho da lista
 nomeLista.size();
 ```
+
+# Generics 
+Deixa o código mais escalável.
+Facilita manutenção.
+Torna o código mais reutilizável.
+
+Ao usar Generics, devemos definir na criação da uma classe, que essa classe recebe quaisquer tipos.
+`public class Classe<T>{}`
+O uso da letra `T` é o caso mais comum para mostra que uma classe é genérica.
+As classes genéricas, armazenam conteúdos de diversas classes. Sendo assim, em seus atributos, devemos inserir uma lista para armazenar esses conteúdos.
+`private List<T> lista = new ArrayList<>()`
