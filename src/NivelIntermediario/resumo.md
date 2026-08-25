@@ -133,7 +133,7 @@ Para inserir valores, usamos o prefixo _set_ e para buscar os valores _get_.
 - Padronização
   - Força todas as pessoas a usarem os _gets e sets_
 
-# Arrays e Listas
+## Arrays e Listas
 Um array é um objeto de memória, ou seja, eu referencio espaços de memória dentro do array. 
 Além disso, os arrays são estáticos. Após se definir o tamanho dele, não é possível alterar.
 Métodos para manusear uma Lista:
@@ -155,7 +155,7 @@ nomeLista.set(0, "novo nome elemento");
 nomeLista.size();
 ```
 
-# Generics 
+## Generics 
 Deixa o código mais escalável.
 Facilita manutenção.
 Torna o código mais reutilizável.
@@ -165,5 +165,10 @@ Ao usar Generics, devemos definir na criação da uma classe, que essa classe re
 O uso da letra `T` é o caso mais comum para mostra que uma classe é genérica.
 As classes genéricas, armazenam conteúdos de diversas classes. Sendo assim, em seus atributos, devemos inserir uma lista para armazenar esses conteúdos.
 `private List<T> lista = new ArrayList<>()`
+
+## Records
+São um tipo de "classe", onde, todos os atributos são criados, porém, são do tipo `final`.
+Ao criar um record, definimos os seus atributos e automaticamente já são definidos os: gets, sets, construtores e outros métodos Java.
+Além disso, os records também pode ter métodos escritos em seu escopo.
 
 
