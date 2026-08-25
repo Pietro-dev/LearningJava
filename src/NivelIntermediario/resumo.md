@@ -171,4 +171,12 @@ São um tipo de "classe", onde, todos os atributos são criados, porém, são do
 Ao criar um record, definimos os seus atributos e automaticamente já são definidos os: gets, sets, construtores e outros métodos Java.
 Além disso, os records também pode ter métodos escritos em seu escopo.
 
+## Stack (pilha)
+Se assemelha a uma lista, porém, devemos olhar para esse lista de forma vertical. 
+Onde o último elemento a entrar é o primeiro a sair. (Li-Fo)
+As pilhas possuem 4 métodos:
+- `push` - adiciona elementos na pilha
+- `pop` - retira elementos da pilha
+- `peek` - mostra o próximo elemento da pilha
+- `size` - mostra o tamanho da pilha
 
