@@ -136,6 +136,7 @@ Para inserir valores, usamos o prefixo _set_ e para buscar os valores _get_.
 ## Arrays e Listas
 Um array é um objeto de memória, ou seja, eu referencio espaços de memória dentro do array. 
 Além disso, os arrays são estáticos. Após se definir o tamanho dele, não é possível alterar.
+Diferente das listas. Que podem ter seus tamanhos aumentados
 Métodos para manusear uma Lista:
 ```java
 // cria a lista
@@ -143,6 +144,7 @@ List<tipo-da-lista> nomeLista = new Lista<tipo-da-lista>();
 
 // adiciona elementos
 nomeLista.add("Nome do elemento");
+nomeLista.add(2, "Nome do elemento");
 
 // remove elementos
 nomeLista.remove("nome do elemento");
@@ -163,20 +165,33 @@ Torna o código mais reutilizável.
 Ao usar Generics, devemos definir na criação da uma classe, que essa classe recebe **quaisquer tipos**.
 `public class Classe<T>{}`
 O uso da letra `T` é o caso mais comum para mostra que uma classe é genérica.
-As classes genéricas, armazenam conteúdos de diversas classes. Sendo assim, em seus atributos, devemos inserir uma lista para armazenar esses conteúdos.
+As classes genéricas, armazenam conteúdos de diversas classes. Sendo assim, nos seus atributos, devemos inserir uma lista para armazenar esses conteúdos.
 `private List<T> lista = new ArrayList<>()`
 
 ## Records
 São um tipo de "classe", onde, todos os atributos são criados, porém, são do tipo `final`.
 Ao criar um record, definimos os seus atributos e automaticamente já são definidos os: gets, sets, construtores e outros métodos Java.
-Além disso, os records também pode ter métodos escritos em seu escopo.
+Além disso, os records também pode ter métodos escritos no seu escopo.
 
 ## Stack (pilha)
 Se assemelha a uma lista, porém, devemos olhar para esse lista de forma vertical. 
-Onde o último elemento a entrar é o primeiro a sair. (Li-Fo)
+Onde o último elemento a entrar é o primeiro a sair. (FILO)
 As pilhas possuem 4 métodos:
 - `push` - adiciona elementos na pilha
 - `pop` - retira elementos da pilha
 - `peek` - mostra o próximo elemento da pilha
 - `size` - mostra o tamanho da pilha
+
+## Queue (filas)
+SE assemelha a uma lista, porém, o primeiro elemento a entrar é o primeiro a sair
+FIFO - First in first out
+Trabalha com HEAD e TAIL (cabeça e rabo). O primeiro elemento é a cabeça e o último o rabo.
+Uma queue é inicializada da seguinte maneira: `Queue<String> queue = new LinkedList<>();`
+As filas são versões simplificadas das listas encadeadas.
+As filas não permitem deletar o TAIL, nem o meio, nem ninguém. Só é possível remover o primeiro elemento
+Métodos para manusear as filas: 
+- `add()` - adicionar elementos
+- `peek()`- ver o próximo elemento
+- `pool()` - remove o primeiro elemento
+- `isEmpty()` - verifica se a fila está vazia
 
