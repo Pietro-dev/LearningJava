@@ -172,6 +172,7 @@ Nas linked list, cada elemento da lista guarda o seu valor e armazena um ponteir
 Dessa forma, para adicionar um novo elemento, basta ajustar o ponteiro do elemento anterior
 e o elemento inserido basta a apontar para o próximo elemento.
 Nas linked list, não necessariamente são listas com endereços de memória sequênciais.
+As Linked Lists tem esses nomes pois um elemento está linkado no próximo elemento.
 
 ## Generics 
 Deixa o código mais escalável.
