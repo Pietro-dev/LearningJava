@@ -156,6 +156,22 @@ nomeLista.set(0, "novo nome elemento");
 // ver tamanho da lista
 nomeLista.size();
 ```
+### Array List
+As listas são ordenadas por indexes
+Nas listas, quando há necessidade de se adicionar um novo elemento, elas inserem o novo elemento no final da lista.
+Mas, caso queiramos adicionar o elemento em outra posição do array, podemos. Porém, precisaremos abrir um espaço na lista,
+adicionar o novo elemento e reordenar todos os outros elementos da lista.
+As listas são extremamente antiperformaticas para remover, adicionar ou mover um elemento da lista.
+**Os arrays list são ótimos quando se quer procurar um elemento, pois ele é ordenado por index.
+Mas, quando se quer fazer inúmeras operações ele não é a melhor opção. Por que o algoritmo
+não fica performático**
+
+### Linked List 
+**São terríveis para procurar um elemento, mas, para adicionar elementos e realizar outras operações são muito performáticas.**
+Nas linked list, cada elemento da lista guarda o seu valor e armazena um ponteiro que indica onde está o próximo elemento.
+Dessa forma, para adicionar um novo elemento, basta ajustar o ponteiro do elemento anterior
+e o elemento inserido basta a apontar para o próximo elemento.
+Nas linked list, não necessariamente são listas com endereços de memória sequênciais.
 
 ## Generics 
 Deixa o código mais escalável.
@@ -194,4 +210,23 @@ Métodos para manusear as filas:
 - `peek()`- ver o próximo elemento
 - `pool()` - remove o primeiro elemento
 - `isEmpty()` - verifica se a fila está vazia
+
+## Collections
+É uma interface implementada pelas interfaces e/ou classes de estruturas de dados
+As colections são uma _interface_ usada nas estruturas de dados como: ArraysList, LinkedList, Queues...
+```mermaid
+mindmap
+  root((Collections))
+    List
+        ArrayList
+        LinkedList
+        Stack
+    Queue
+     PriorityQueue
+    Set
+        SortedSet
+            TreeSet
+      HashSet
+      LinkedHashSet
+```
 
