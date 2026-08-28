@@ -1,4 +1,4 @@
-package LinkedList;
+package NivelIntermediario.Collection.List.LinkedList;
 
 import java.util.LinkedList;
 

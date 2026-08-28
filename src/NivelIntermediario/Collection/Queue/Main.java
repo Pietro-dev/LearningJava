@@ -1,4 +1,4 @@
-package NivelIntermediario.Queue;
+package NivelIntermediario.Collection.Queue;
 
 
 import java.util.LinkedList;
