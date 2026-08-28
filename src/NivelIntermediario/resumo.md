@@ -214,7 +214,7 @@ Métodos para manusear as filas:
 
 ## Collections
 É uma interface implementada pelas interfaces e/ou classes de estruturas de dados
-As colections são uma _interface_ usada nas estruturas de dados como: ArraysList, LinkedList, Queues...
+As colections são uma _interface_ usada nas estruturas de dados como: ArraysList, NivelIntermediario.Collection.List.LinkedList, Queues...
 ```mermaid
 mindmap
   root((Collections))
@@ -231,3 +231,32 @@ mindmap
       LinkedHashSet
 ```
 
+## Set
+### HashSet
+É usado no lugar de uma lista quando queremos ignorar elementos duplicados dentro da estrutura de dados.
+O Set **não trabalha com ordenação**. A ordem é aleatória.
+
+### TreeSet
+Assim como o `HashSet<>`, impede a inserção duplicados, **mas,** os `TreeSet<>` ordenam os elementos automáticamente em ordem alfabética.
+
+### LinkedHashSet
+Não repete elementos, não há ordenação, mas, a ordem de implementação é a ordem de implementação.
+
+## Big O
+Mostra como o algoritmo escala em função do tamanho do input.
+Big O olha para a escalabilidade dos algoritmos. Não o quanto de memória utilizamos.
+### Complexidade temporal
+Diz respeito a quanto tempo se demora para construir o algoritmo
+### Complexidade espacial
+Diz respeito à quanto de memória usamos para construir o algoritmo.
+### Big O notations
+- O(1) constante
+  - Independente do tamanho do input, o tempo de execução é o mesmo
+  - Ex: pegar o primeiro elemento de um Array
+- O (Log N)
+  - Conforme o input aumenta em n, o tempo de execução aumenta em log n
+  - Conforme o input aumenta exponencialmente, o tempo de execuçõa aumenta linearmente.
+- O (N Log N)
+  - Sorting
+  - Didive and Conquer
+    - 
