@@ -260,3 +260,13 @@ Diz respeito à quanto de memória usamos para construir o algoritmo.
   - Sorting
   - Didive and Conquer
     - 
+
+## Tipo Estático x Tipo dinâmico
+As linguagens de tipo estático sempre mostrarão um erro no tempo de COMPILAÇÃO do código. 
+Ou seja, nem é permitido rodar o código para identificar o erro. A aplicação não roda enquanto o erro estiver no código.
+
+As linguagens de tipo dinâmico mostram os erros apenas ao iniciar a aplicação.
+Ou seja, os erros são exibidos em tempo de execução.
+
+## Linguagens de tipo forte
+As linguagens de tipo forte, tipagem forte, não permitem que o tipo de uma variável seja alterada!
