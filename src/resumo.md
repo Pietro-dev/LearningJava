@@ -270,3 +270,24 @@ Ou seja, os erros são exibidos em tempo de execução.
 
 ## Linguagens de tipo forte
 As linguagens de tipo forte, tipagem forte, não permitem que o tipo de uma variável seja alterada!
+
+## Interpolação de strings
+Para interpolar strings, devemos usar o comando `printf();` por meio dele, conseguimos interpolar Strings.
+Para a interpolação, temos os seguintes marcadores: 
+- %f para doubles e pontos flutuantes
+- %d para números inteiros
+- %s pra strings
+- %n para quebra de linhas
+
+Ex: 
+```java
+ System.out.printf("O %s tem %d e recebe %.2f%n", nome, idade, renda);
+```
+
+Podemos alterar o separador de casas decimais. Para isso, precisamos definir de qual localização queremos usar o separador.
+
+```java
+import java.util.Locale;
+
+Locale.setDefault(Locale.US);
+```
